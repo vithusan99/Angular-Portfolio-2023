@@ -1,0 +1,49 @@
+<header class="header">
+    <nav class="nav container mx-1 ">
+        <a href="/" class="nav_logo">Anith</a>
+        <div [ngClass]="isshowMenu ? 'show-menu ':''" class="nav_menu p-md-0 p-3">
+            <ul class="nav_list grid pt-md-3">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link active-link">
+                        <i class="uil uil-estate nav_icon"></i>
+                        Home
+                    </a>
+                </li>
+        
+                <li class="nav_item">
+                    <a href="#about" class="nav_link">
+                        <i class="uil uil-user nav_icon"></i>About
+                    </a>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#skills" class="nav_link">
+                        <i class="uil uil-file-alt nav_icon"></i>Skils
+                    </a>
+                </li>
+        
+                <li class="nav_item">
+                    <a href="#services" class="nav_link">
+                        <i class="uil uil-briefcase-alt nav_icon"></i>Service
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#portfolio" class="nav_link">
+                        <i class="uil uil-scenery nav_icon"></i>Portfolio
+                    </a>
+                </li>
+        
+                <li class="nav_item">
+                    <a href="#contact" class="nav_link">
+                        <i class="uil uil-message nav_icon"></i>Contact
+                    </a>
+                </li>
+            </ul>
+            <!-- [ngClass]="isshowMenu ? 'show-menu':''" -->
+            <i (click)="showMenu()"  class="uil uil-times nav_close"></i>
+        </div>
+        <div class="nav_toggle">
+            <i (click)="showMenu()" class="uil uil-apps"></i>
+        </div>
+    </nav>
+</header>
